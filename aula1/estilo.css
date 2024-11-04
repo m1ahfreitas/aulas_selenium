@@ -1,0 +1,22 @@
+/*
+Regras CSS::
+
+seletor {
+   propriedade : valor;
+}
+
+seletores:
+
+Nome do tag: Exemplo p{}, h1{}
+Selecionar por id: #valorDoId
+Selecionar por classe: .valorDaClasse
+*/
+
+h1 {
+   color : red;
+}
+
+.item_css{ 
+   background-color: blue;
+}
+

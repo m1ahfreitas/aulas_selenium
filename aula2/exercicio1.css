@@ -1,0 +1,29 @@
+h1{
+    font-size: 18pt;
+}
+
+.campos{
+    width: 50%;
+    padding: 5px;
+    display: block;
+}
+
+#salvar{
+  margin-top:5px
+}
+
+#notas{
+    width: 50%;
+    border: 1px solid #888;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.linha{
+    background-color: #eee;
+}
+
+td{
+    border: 1px solid #888;
+    
+}

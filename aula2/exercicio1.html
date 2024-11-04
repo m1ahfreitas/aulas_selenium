@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercicio1.css">
+</head>
+<body>
+    <h1>Cadastro de Notas</h1>
+    <hr>
+
+    <form>
+        <label>Nome</label>
+        <input type="text" name="nome" class="campos" >
+
+        <label>Nota</label>
+        <input type="number" name="nota" class="campos">
+
+        <button id="salvar" type="button">Salvar</button>
+    </form>
+
+    <table id="notas" > <!-- Tabela -->
+        <thead>        
+            <tr> <!-- (t)able (r)ow: linha da tabela -->
+                <th>Nome</th> <!-- table data: dados da tabela - célula-->
+                <th>Nota</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="linha"> 
+                <td>Vanessa</td> 
+                <td>10</td>
+            </tr>
+            <tr> 
+                <td>Kaique</td> 
+                <td>10</td>
+            </tr>
+            <tr class="linha"> 
+                <td>Luis</td> 
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+
+<script>
+    //Seleciona o botão na página
+    var elementoBtn = document.querySelector("#salvar");
+    //adiciona um ouvinte de click e 
+    //quando o botão for clicado faz algo
+    elementoBtn.addEventListener('click', function(){
+        //seleciona um campo utilizando o atributo name
+        var campoNome = document.querySelector("input[name='nome']");
+        var campoNota = document.querySelector("input[name='nota']");
+        alert(campoNome.value + " você tirou a nota " + campoNota.value);
+        //seleciona a tabela
+        var elementTable = document.querySelector('table');
+        //seleciona o tbody da tabela. obs a busca e entro da tabela
+        //e não no documento inteiro 
+        var tbody = elementTable.querySelector('tbody');
+        var linha = tbody.insertRow();
+        var celNome = linha.insertCell();
+        var celNota = linha.insertCell();
+        celNome.innerText = campoNome.value;
+        celNota.innerText = campoNota.value;
+
+    });
+</script>   
+
+</body>
+</html>

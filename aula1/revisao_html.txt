@@ -1,0 +1,27 @@
+H    T    M      L
+
+<a href="http://www.google.com">HiperText</a> 
+
+
+Markup Language
+Linguagem de Marcação de Hipertexto
+
+HiperTexto => Texto, imagens, link, botões, 
+              videos, audio, formulário, etc              
+Texto => Conjunto de caracteres
+Hiper => Muito, Grande, Variedade
+etiqueta => marcar ou identificar = tag
+<label></label>
+<p></p>
+<img>
+<a>   </a>
+
+Linguagem: Forma de se comunicar
+
+
+
+Exemplo de regra css
+seletor {
+    propriedade : valor;
+    propriedade : valor
+}
